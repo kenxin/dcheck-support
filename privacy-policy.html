@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCheck - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .app-name {
+            color: #764ba2;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        .update-date {
+            color: #888;
+            font-size: 0.85em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #444;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        p, li {
+            margin-bottom: 12px;
+            color: #555;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .contact {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-switch a {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="#zh" onclick="showLang('zh')">中文</a>
+            <a href="#en" onclick="showLang('en')">English</a>
+        </div>
+
+        <!-- Chinese Version -->
+        <div id="zh-content">
+            <h1>隐私政策</h1>
+            <p class="app-name">DCheck - 每日事项</p>
+            <p class="update-date">最后更新：2025年2月</p>
+
+            <div class="highlight">
+                <strong>核心承诺：</strong>DCheck 尊重并保护您的隐私。我们不收集、不存储、不传输您的任何个人数据。
+            </div>
+
+            <h2>数据存储</h2>
+            <p>DCheck 的所有数据均存储在您的设备本地：</p>
+            <ul>
+                <li>任务数据存储在设备本地的 SQLite 数据库中</li>
+                <li>设置信息（语言偏好、通知设置）存储在本地</li>
+                <li>所有数据仅保留在您的设备上，不会上传到任何服务器</li>
+            </ul>
+
+            <h2>网络访问</h2>
+            <p>DCheck 不需要网络连接即可正常运行。应用不会：</p>
+            <ul>
+                <li>连接任何远程服务器</li>
+                <li>发送任何数据到第三方</li>
+                <li>进行任何形式的数据追踪</li>
+            </ul>
+
+            <h2>通知权限</h2>
+            <p>如果您启用任务提醒功能，应用会请求通知权限。此权限仅用于：</p>
+            <ul>
+                <li>在任务超时时发送本地提醒通知</li>
+                <li>通知内容完全基于您本地的任务数据生成</li>
+            </ul>
+
+            <h2>数据删除</h2>
+            <p>卸载应用将自动删除所有本地存储的数据。您也可以在应用内删除特定任务。</p>
+
+            <h2>儿童隐私</h2>
+            <p>DCheck 不收集任何用户的个人信息，适合所有年龄段用户使用。</p>
+
+            <h2>政策更新</h2>
+            <p>如果我们更新隐私政策，将在此页面发布新版本。建议您定期查看。</p>
+
+            <div class="contact">
+                <h2>联系我们</h2>
+                <p>如有任何隐私相关问题，请联系：</p>
+                <p><a href="support.html">访问支持页面</a></p>
+            </div>
+        </div>
+
+        <!-- English Version -->
+        <div id="en-content" style="display: none;">
+            <h1>Privacy Policy</h1>
+            <p class="app-name">DCheck - Daily Tasks</p>
+            <p class="update-date">Last Updated: February 2025</p>
+
+            <div class="highlight">
+                <strong>Our Commitment:</strong> DCheck respects and protects your privacy. We do not collect, store, or transmit any of your personal data.
+            </div>
+
+            <h2>Data Storage</h2>
+            <p>All DCheck data is stored locally on your device:</p>
+            <ul>
+                <li>Task data is stored in a local SQLite database on your device</li>
+                <li>Settings (language preference, notification settings) are stored locally</li>
+                <li>All data remains on your device and is never uploaded to any server</li>
+            </ul>
+
+            <h2>Network Access</h2>
+            <p>DCheck does not require an internet connection to function. The app does not:</p>
+            <ul>
+                <li>Connect to any remote servers</li>
+                <li>Send any data to third parties</li>
+                <li>Perform any form of data tracking</li>
+            </ul>
+
+            <h2>Notification Permission</h2>
+            <p>If you enable task reminders, the app will request notification permission. This permission is only used to:</p>
+            <ul>
+                <li>Send local reminder notifications when tasks are overdue</li>
+                <li>Notification content is generated entirely from your local task data</li>
+            </ul>
+
+            <h2>Data Deletion</h2>
+            <p>Uninstalling the app will automatically delete all locally stored data. You can also delete specific tasks within the app.</p>
+
+            <h2>Children's Privacy</h2>
+            <p>DCheck does not collect any personal information from users and is suitable for users of all ages.</p>
+
+            <h2>Policy Updates</h2>
+            <p>If we update this privacy policy, we will post the new version on this page. We recommend checking periodically.</p>
+
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p>For any privacy-related questions, please contact:</p>
+                <p><a href="support.html">Visit Support Page</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.getElementById('zh-content').style.display = lang === 'zh' ? 'block' : 'none';
+            document.getElementById('en-content').style.display = lang === 'en' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
