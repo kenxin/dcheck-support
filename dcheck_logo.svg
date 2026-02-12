@@ -1,0 +1,55 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 渐变定义 -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976D2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 阴影滤镜 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- 外圆环 -->
+  <circle cx="60" cy="60" r="54" fill="url(#mainGradient)" filter="url(#shadow)"/>
+  
+  <!-- 内圆背景 -->
+  <circle cx="60" cy="60" r="42" fill="#FFFFFF" opacity="0.95"/>
+  
+  <!-- 时钟刻度 -->
+  <g stroke="url(#mainGradient)" stroke-width="2" opacity="0.3">
+    <line x1="60" y1="22" x2="60" y2="28" />
+    <line x1="98" y1="60" x2="92" y2="60" />
+    <line x1="60" y1="98" x2="60" y2="92" />
+    <line x1="22" y1="60" x2="28" y2="60" />
+  </g>
+  
+  <!-- 时钟指针 -->
+  <g fill="url(#mainGradient)">
+    <!-- 短针(小时) -->
+    <line x1="60" y1="60" x2="60" y2="40" stroke="url(#mainGradient)" stroke-width="4" stroke-linecap="round"/>
+    <!-- 长针(分钟) -->
+    <line x1="60" y1="60" x2="75" y2="45" stroke="url(#accentGradient)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- 中心点 -->
+  <circle cx="60" cy="60" r="4" fill="url(#accentGradient)"/>
+  
+  <!-- 对勾符号 -->
+  <path d="M45 58 L54 67 L78 43" stroke="#4CAF50" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  
+  <!-- 优先级箭头 -->
+  <path d="M85 75 L90 70 L85 65" stroke="url(#accentGradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  
+  <!-- 装饰性小点 -->
+  <circle cx="35" cy="35" r="2" fill="#4CAF50" opacity="0.6"/>
+  <circle cx="85" cy="35" r="2" fill="url(#accentGradient)" opacity="0.6"/>
+  <circle cx="35" cy="85" r="2" fill="url(#mainGradient)" opacity="0.6"/>
+</svg>
